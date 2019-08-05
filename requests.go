@@ -135,7 +135,7 @@ func (req *Request) Get(origurl string, args ...interface{}) (resp *Response, er
 	res, err := req.Client.Do(req.httpreq)
 
 	if err != nil {
-		fmt.Println(err)
+		// fmt.Println(err)
 		return nil, err
 	}
 
@@ -229,7 +229,7 @@ func (req *Request) Proxy(proxyurl string) {
 	urli := url.URL{}
 	urlproxy, err := urli.Parse(proxyurl)
 	if err != nil {
-		fmt.Println("Set proxy failed")
+		// fmt.Println("Set proxy failed")
 		return
 	}
 	req.Client.Transport = &http.Transport{
@@ -394,7 +394,7 @@ func (req *Request) Post(origurl string, args ...interface{}) (resp *Response, e
 	res, err := req.Client.Do(req.httpreq)
 
 	if err != nil {
-		fmt.Println(err)
+		// fmt.Println(err)
 		return nil, err
 	}
 
