@@ -1,5 +1,5 @@
 
-[![license](http://dmlc.github.io/img/apache2.svg)](https://raw.githubusercontent.com/asmcos/requests/master/LICENSE)
+[![license](http://dmlc.github.io/img/apache2.svg)](https://raw.githubusercontent.com/ironbang/requests/master/LICENSE)
 
 # requests
 
@@ -8,7 +8,7 @@ Requests is an HTTP library  , it is easy to use. Similar to Python requests.
 # Installation
 
 ```
-go get -u github.com/asmcos/requests
+go get -u github.com/ironbang/requests
 ```
 
 # Start
@@ -16,7 +16,7 @@ go get -u github.com/asmcos/requests
 ``` go
 package main
 
-import "github.com/asmcos/requests"
+import "github.com/ironbang/requests"
 
 func main (){
 
@@ -33,7 +33,7 @@ func main (){
 ``` go
 package main
 
-import "github.com/asmcos/requests"
+import "github.com/ironbang/requests"
 
 
 func main (){
@@ -146,14 +146,14 @@ Test with the `correct` user information.
 
 ``` go
 req := requests.Requests()
-resp,_ := req.Get("https://api.github.com/user",requests.Auth{"asmcos","password...."})
+resp,_ := req.Get("https://api.github.com/user",requests.Auth{"ironbang","password...."})
 println(resp.Text())
 ```
 
 github return
 
 ```
-{"login":"asmcos","id":xxxxx,"node_id":"Mxxxxxxxxx==".....
+{"login":"ironbang","id":xxxxx,"node_id":"Mxxxxxxxxx==".....
 ```
 
 # JSON
